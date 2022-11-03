@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secure Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwi-3k-52j">
+                                <rect key="frame" x="107" y="115" width="176" height="34"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xf-q7-fQy">
+                                <rect key="frame" x="40" y="347" width="310" height="35"/>
+                                <color key="backgroundColor" red="0.01176470611" green="0.01176470611" blue="0.01176470611" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Authorize">
+                                    <color key="baseForegroundColor" red="0.99607843159999998" green="0.99215686319999996" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="unlockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6L-3Z-pCU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-1h-T5M">
+                                <rect key="frame" x="40" y="715" width="310" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Forgot PIN">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="secretQuestionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZgV-Jk-v2d"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RLm-18-Jhm">
+                                <rect key="frame" x="40" y="641" width="310" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-G3-ddD">
+                                <rect key="frame" x="100.66666666666667" y="580" width="188.66666666666663" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VbJ-AG-Abv">
+                                <rect key="frame" x="40" y="213" width="310" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99607843159999998" green="0.99215686319999996" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F2r-1h-T5M" secondAttribute="bottom" constant="60" id="0Vw-sX-Na7"/>
+                            <constraint firstItem="RLm-18-Jhm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="18C-u6-ikX"/>
+                            <constraint firstItem="F2r-1h-T5M" firstAttribute="top" secondItem="RLm-18-Jhm" secondAttribute="bottom" constant="40" id="42D-2A-q2w"/>
+                            <constraint firstItem="VbJ-AG-Abv" firstAttribute="top" secondItem="gwi-3k-52j" secondAttribute="bottom" constant="64" id="9f3-cv-RAD"/>
+                            <constraint firstItem="gwi-3k-52j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AYo-HH-Eel"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Xf-q7-fQy" secondAttribute="trailing" constant="40" id="BZU-wU-Mvc"/>
+                            <constraint firstItem="cpu-G3-ddD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FdR-mv-dGx"/>
+                            <constraint firstItem="RLm-18-Jhm" firstAttribute="top" secondItem="cpu-G3-ddD" secondAttribute="bottom" constant="27" id="Hfu-SV-h6K"/>
+                            <constraint firstItem="gwi-3k-52j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="HoA-qz-E06"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F2r-1h-T5M" secondAttribute="trailing" constant="40" id="HzJ-3K-mGP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VbJ-AG-Abv" secondAttribute="trailing" constant="40" id="OP5-wY-qRU"/>
+                            <constraint firstItem="8Xf-q7-fQy" firstAttribute="top" secondItem="VbJ-AG-Abv" secondAttribute="bottom" constant="100" id="Vek-7d-ttG"/>
+                            <constraint firstItem="VbJ-AG-Abv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="WCl-qd-cOA"/>
+                            <constraint firstItem="8Xf-q7-fQy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ZST-F5-5da"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RLm-18-Jhm" secondAttribute="trailing" constant="40" id="g4s-jP-Xah"/>
+                            <constraint firstItem="F2r-1h-T5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="hSQ-8a-Gxg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="UnlockButton" destination="8Xf-q7-fQy" id="XXu-DW-yhI"/>
+                        <outlet property="pinField" destination="VbJ-AG-Abv" id="Kon-4t-31b"/>
+                        <outlet property="secretQuestionButton" destination="F2r-1h-T5M" id="PEz-Q2-QTM"/>
+                        <outlet property="secretQuestionField" destination="RLm-18-Jhm" id="7RD-4E-h90"/>
+                        <outlet property="secretQuestionLabel" destination="cpu-G3-ddD" id="M4A-ay-NkJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
