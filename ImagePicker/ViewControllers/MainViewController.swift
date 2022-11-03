@@ -35,7 +35,6 @@ class MainViewController: UIViewController {
         secretQuestionButton.layer.cornerRadius = 15
         pinField.dropShadow()
         secretQuestionField.dropShadow()
-        
         lock.frame.size = CGSize(width: 30, height: 30)
         lock.center.x = view.center.x
         lock.center.y = pinField.center.y + 60
