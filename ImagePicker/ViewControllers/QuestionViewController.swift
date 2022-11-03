@@ -18,7 +18,7 @@ class QuestionViewController: UIViewController {
         questionField.placeholder = "Enter answer to secret question"
         getPINButton.layer.cornerRadius = 15
     }
-
+    
     // MARK: - IBActions
     @IBAction func getPINButton(_ sender: UIButton) {
         if questionField.text == StorageManager.shared.questionAnswer{

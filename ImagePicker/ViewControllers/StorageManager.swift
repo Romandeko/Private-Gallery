@@ -8,11 +8,9 @@
 import Foundation
 
 class StorageManager{
-    
     static var shared = StorageManager()
     private var storage = UserDefaults.standard
     private init(){}
-    
     var isFirstLoad : Bool {
         get{
             !storage.bool(forKey: "firstLoad")
@@ -37,6 +35,4 @@ class StorageManager{
             storage.set(newValue, forKey: "questionAnswer")
         }
     }
-    
-    
 }
