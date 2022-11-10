@@ -12,6 +12,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var questionField: UITextField!
     @IBOutlet weak var answerLabel: UILabel!
     @IBOutlet weak var getPINButton: UIButton!
+    // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         questionField.dropShadow()

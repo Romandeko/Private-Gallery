@@ -10,6 +10,7 @@
 		3F12EBCD29140E82003DA2F9 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12EBCB29140E82003DA2F9 /* GalleryViewController.swift */; };
 		3F12EBCE29140E82003DA2F9 /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F12EBCC29140E82003DA2F9 /* GalleryViewController.xib */; };
 		3F4FE5522912636200AAB41C /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4FE5512912636200AAB41C /* Shadow.swift */; };
+		3F54DFF5291509AC00286DE3 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54DFF4291509AC00286DE3 /* TextFieldDelegate.swift */; };
 		3F5B0FEB291109E0009E10D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B0FEA291109E0009E10D4 /* AppDelegate.swift */; };
 		3F5B0FED291109E0009E10D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B0FEC291109E0009E10D4 /* SceneDelegate.swift */; };
 		3F5B0FEF291109E0009E10D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5B0FEE291109E0009E10D4 /* MainViewController.swift */; };
@@ -19,13 +20,14 @@
 		3F7ED88129141020003B452B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7ED87F29141020003B452B /* QuestionViewController.swift */; };
 		3F7ED88229141020003B452B /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7ED88029141020003B452B /* QuestionViewController.xib */; };
 		3FEAB33029140471004A5006 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEAB32F29140471004A5006 /* StorageManager.swift */; };
-		3FEBBEE12912CF4D0059D7AD /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBBEE02912CF4D0059D7AD /* Delegate.swift */; };
+		3FEBBEE12912CF4D0059D7AD /* GalleryVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEBBEE02912CF4D0059D7AD /* GalleryVCDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F12EBCB29140E82003DA2F9 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		3F12EBCC29140E82003DA2F9 /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GalleryViewController.xib; path = ../ViewControllers/GalleryViewController.xib; sourceTree = "<group>"; };
 		3F4FE5512912636200AAB41C /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		3F54DFF4291509AC00286DE3 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		3F5B0FE7291109E0009E10D4 /* ImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5B0FEA291109E0009E10D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5B0FEC291109E0009E10D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +39,7 @@
 		3F7ED87F29141020003B452B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		3F7ED88029141020003B452B /* QuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
 		3FEAB32F29140471004A5006 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		3FEBBEE02912CF4D0059D7AD /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		3FEBBEE02912CF4D0059D7AD /* GalleryVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryVCDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,8 @@
 		3FEBBEDF2912CF3D0059D7AD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3FEBBEE02912CF4D0059D7AD /* Delegate.swift */,
+				3FEBBEE02912CF4D0059D7AD /* GalleryVCDelegate.swift */,
+				3F54DFF4291509AC00286DE3 /* TextFieldDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -201,8 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FEBBEE12912CF4D0059D7AD /* Delegate.swift in Sources */,
+				3FEBBEE12912CF4D0059D7AD /* GalleryVCDelegate.swift in Sources */,
 				3F12EBCD29140E82003DA2F9 /* GalleryViewController.swift in Sources */,
+				3F54DFF5291509AC00286DE3 /* TextFieldDelegate.swift in Sources */,
 				3F7ED88129141020003B452B /* QuestionViewController.swift in Sources */,
 				3F5B0FEF291109E0009E10D4 /* MainViewController.swift in Sources */,
 				3FEAB33029140471004A5006 /* StorageManager.swift in Sources */,
