@@ -8,9 +8,11 @@
 import Foundation
 
 class StorageManager{
+    
     static var shared = StorageManager()
     private var storage = UserDefaults.standard
     private init(){}
+    
     var isFirstLoad : Bool {
         get{
             !storage.bool(forKey: "firstLoad")
@@ -27,12 +29,14 @@ class StorageManager{
             storage.set(newValue, forKey: "pinCode")
         }
     }
-    var questionAnswer: String {
-        get {
-            storage.string(forKey: "questionAnswer") ?? ""
+    var imagesCount : Int{
+        get{
+            UserDefaults.standard.integer(forKey: "count")
         }
-        set {
-            storage.set(newValue, forKey: "questionAnswer")
+        set{
+            UserDefaults.standard.set(newValue, forKey: "count")
         }
     }
+    
+    
 }
